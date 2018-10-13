@@ -23,27 +23,27 @@ object Analyzer extends LazyLogging {
         try {
           val data = sc.textFile(tempFileName)
             .map(line => line.split('|'))
-            .map(record => (record(0), record(1).toLong))
+            .map(record => Status(record(0), record(1).toLong))
 
           val numberOfRecords = data.count
-          val total = data.map(record => record._2).sum
-          val minRecord = data.fold(("", Long.MaxValue))((acc, value) => {
-            if (acc._2 > value._2)
-              value
+          val total = data.map(status => status.value).sum
+          val minRecord = data.fold(Status("", Long.MaxValue))((acc, current) => {
+            if (acc.value > current.value)
+              current
             else
               acc
           })
 
-          val maxRecord = data.fold(("", Long.MinValue))((acc, value) => {
-            if (acc._2 < value._2)
-              value
+          val maxRecord = data.fold(Status("", Long.MinValue))((acc, current) => {
+            if (acc.value < current.value)
+              current
             else
               acc
           })
 
           val result = s"Number of records = $numberOfRecords" +
-            s", min: at ${minRecord._1} - ${minRecord._2}" +
-            s", max: at ${maxRecord._1} - ${maxRecord._2}" +
+            s", min: at ${minRecord.date} - ${minRecord.value}" +
+            s", max: at ${maxRecord.date} - ${maxRecord.value}" +
             f", average = ${total / numberOfRecords}%.2f"
           logger.info(result)
 
