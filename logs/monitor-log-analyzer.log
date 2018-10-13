@@ -1,8 +1,0 @@
-2018-10-13 20:43:09,970 [INFO ] com.stulsoft.monitor.log.analyzer.Application$(14) - ==>Application
-2018-10-13 20:43:17,434 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(19) - Analyzing src/test/resources/panel-monitor-statistics.log file for stats_clicks
-2018-10-13 20:43:18,871 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(48) - Number of records = 42, min: at 2018-09-13 09:24:58 - 12146297, max: at 2018-09-12 17:21:10 - 29897858, average = 19886997.50
-2018-10-13 20:43:18,871 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(19) - Analyzing src/test/resources/panel-monitor-statistics.log file for event_daily
-2018-10-13 20:43:19,090 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(48) - Number of records = 39, min: at 2018-09-13 09:24:54 - 15532, max: at 2018-09-16 17:18:14 - 44504, average = 29827.54
-2018-10-13 20:43:19,090 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(19) - Analyzing src/test/resources/panel-monitor-statistics.log file for stats_conversions
-2018-10-13 20:43:19,340 [INFO ] com.stulsoft.monitor.log.analyzer.Analyzer$(48) - Number of records = 12, min: at 2018-09-16 13:19:13 - 0, max: at 2018-09-16 16:56:25 - 405, average = 310.25
-2018-10-13 20:43:19,418 [INFO ] com.stulsoft.monitor.log.analyzer.Application$(23) - <==Application
