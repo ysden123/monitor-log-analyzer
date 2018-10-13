@@ -40,8 +40,9 @@ case class PrepareStatisticsLog(name: String) {
         }
       } catch {
         case _: Exception =>
+      } finally {
+        tempFile.close()
       }
-      tempFile.close()
       tempFileName
     }
   }
