@@ -1,0 +1,837 @@
+2018-09-12 16:21:07.785 [scala-execution-context-global-18] INFO  statistics - 
+stats_clicks_20180912:
+ time = 2018-09-12 16:21:07.
+ previous value = 26930079,
+ current value = 27544335,
+ difference = 614256,
+ average difference = 614256.0,
+ number of measurements = 1,
+       
+2018-09-12 16:36:08.451 [scala-execution-context-global-19] INFO  statistics - 
+stats_clicks_20180912:
+ time = 2018-09-12 16:36:08.
+ previous value = 27544335,
+ current value = 28240031,
+ difference = 695696,
+ average difference = 654976.0,
+ number of measurements = 2,
+       
+2018-09-12 16:51:08.885 [scala-execution-context-global-20] INFO  statistics - 
+stats_clicks_20180912:
+ time = 2018-09-12 16:51:08.
+ previous value = 28240031,
+ current value = 28879409,
+ difference = 639378,
+ average difference = 649776.7,
+ number of measurements = 3,
+       
+2018-09-12 17:06:09.418 [scala-execution-context-global-21] INFO  statistics - 
+stats_clicks_20180912:
+ time = 2018-09-12 17:06:09.
+ previous value = 28879409,
+ current value = 29346615,
+ difference = 467206,
+ average difference = 604134.0,
+ number of measurements = 4,
+       
+2018-09-12 17:21:10.781 [scala-execution-context-global-22] INFO  statistics - 
+stats_clicks_20180912:
+ time = 2018-09-12 17:21:10.
+ previous value = 29346615,
+ current value = 29897858,
+ difference = 551243,
+ average difference = 593555.8,
+ number of measurements = 5,
+       
+2018-09-13 09:24:54.283 [scala-execution-context-global-28] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 09:24:54.
+ previous value = 14882,
+ current value = 15532,
+ difference = 650,
+ average difference = 650.0,
+ number of measurements = 1,
+       
+2018-09-13 09:24:58.699 [scala-execution-context-global-27] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 09:24:58.
+ previous value = 11667302,
+ current value = 12146297,
+ difference = 478995,
+ average difference = 478995.0,
+ number of measurements = 1,
+       
+2018-09-13 09:39:53.374 [scala-execution-context-global-36] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 09:39:53.
+ previous value = 15532,
+ current value = 16198,
+ difference = 666,
+ average difference = 658.0,
+ number of measurements = 2,
+       
+2018-09-13 09:40:00.767 [scala-execution-context-global-37] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 09:40:00.
+ previous value = 12146297,
+ current value = 12571728,
+ difference = 425431,
+ average difference = 452213.0,
+ number of measurements = 2,
+       
+2018-09-13 09:54:53.878 [scala-execution-context-global-45] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 09:54:53.
+ previous value = 16198,
+ current value = 16858,
+ difference = 660,
+ average difference = 658.6667,
+ number of measurements = 3,
+       
+2018-09-13 09:55:01.706 [scala-execution-context-global-46] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 09:55:01.
+ previous value = 12571728,
+ current value = 13000393,
+ difference = 428665,
+ average difference = 444363.66,
+ number of measurements = 3,
+       
+2018-09-13 10:09:54.305 [scala-execution-context-global-55] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 10:09:54.
+ previous value = 16858,
+ current value = 17509,
+ difference = 651,
+ average difference = 656.75,
+ number of measurements = 4,
+       
+2018-09-13 10:09:59.233 [scala-execution-context-global-54] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 10:09:59.
+ previous value = 13000393,
+ current value = 13380202,
+ difference = 379809,
+ average difference = 428225.0,
+ number of measurements = 4,
+       
+2018-09-13 10:24:54.800 [scala-execution-context-global-64] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 10:24:54.
+ previous value = 17509,
+ current value = 18060,
+ difference = 551,
+ average difference = 635.6,
+ number of measurements = 5,
+       
+2018-09-13 10:25:01.481 [scala-execution-context-global-63] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 10:25:01.
+ previous value = 13380202,
+ current value = 13761203,
+ difference = 381001,
+ average difference = 418780.2,
+ number of measurements = 5,
+       
+2018-09-13 10:39:54.070 [scala-execution-context-global-72] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 10:39:54.
+ previous value = 18060,
+ current value = 18620,
+ difference = 560,
+ average difference = 623.0,
+ number of measurements = 6,
+       
+2018-09-13 10:40:00.986 [scala-execution-context-global-73] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 10:40:00.
+ previous value = 13761203,
+ current value = 14121453,
+ difference = 360250,
+ average difference = 409025.16,
+ number of measurements = 6,
+       
+2018-09-13 10:54:54.659 [scala-execution-context-global-83] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 10:54:54.
+ previous value = 18620,
+ current value = 19667,
+ difference = 1047,
+ average difference = 683.5714,
+ number of measurements = 7,
+       
+2018-09-13 10:55:02.109 [scala-execution-context-global-82] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 10:55:02.
+ previous value = 14121453,
+ current value = 14499800,
+ difference = 378347,
+ average difference = 404642.56,
+ number of measurements = 7,
+       
+2018-09-13 11:09:53.668 [scala-execution-context-global-91] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 11:09:53.
+ previous value = 19667,
+ current value = 20378,
+ difference = 711,
+ average difference = 687.0,
+ number of measurements = 8,
+       
+2018-09-13 11:10:00.488 [scala-execution-context-global-92] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 11:10:00.
+ previous value = 14499800,
+ current value = 14877482,
+ difference = 377682,
+ average difference = 401272.5,
+ number of measurements = 8,
+       
+2018-09-13 11:24:53.961 [scala-execution-context-global-101] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 11:24:53.
+ previous value = 20378,
+ current value = 21222,
+ difference = 844,
+ average difference = 704.44446,
+ number of measurements = 9,
+       
+2018-09-13 11:25:03.946 [scala-execution-context-global-102] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 11:25:03.
+ previous value = 14877482,
+ current value = 15293426,
+ difference = 415944,
+ average difference = 402902.66,
+ number of measurements = 9,
+       
+2018-09-13 11:39:54.567 [scala-execution-context-global-111] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 11:39:54.
+ previous value = 21222,
+ current value = 22003,
+ difference = 781,
+ average difference = 712.1,
+ number of measurements = 10,
+       
+2018-09-13 11:40:02.325 [scala-execution-context-global-110] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 11:40:02.
+ previous value = 15293426,
+ current value = 15682684,
+ difference = 389258,
+ average difference = 401538.2,
+ number of measurements = 10,
+       
+2018-09-13 11:54:53.586 [scala-execution-context-global-119] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 11:54:53.
+ previous value = 22003,
+ current value = 22894,
+ difference = 891,
+ average difference = 728.36365,
+ number of measurements = 11,
+       
+2018-09-13 11:55:03.095 [scala-execution-context-global-120] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 11:55:03.
+ previous value = 15682684,
+ current value = 16060630,
+ difference = 377946,
+ average difference = 399393.47,
+ number of measurements = 11,
+       
+2018-09-13 12:09:53.179 [scala-execution-context-global-130] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 12:09:53.
+ previous value = 22894,
+ current value = 23796,
+ difference = 902,
+ average difference = 742.8333,
+ number of measurements = 12,
+       
+2018-09-13 12:10:01.423 [scala-execution-context-global-129] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 12:10:01.
+ previous value = 16060630,
+ current value = 16427396,
+ difference = 366766,
+ average difference = 396674.5,
+ number of measurements = 12,
+       
+2018-09-13 12:24:53.510 [scala-execution-context-global-139] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 12:24:53.
+ previous value = 23796,
+ current value = 24408,
+ difference = 612,
+ average difference = 732.7692,
+ number of measurements = 13,
+       
+2018-09-13 12:25:05.049 [scala-execution-context-global-140] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 12:25:05.
+ previous value = 16427396,
+ current value = 16773762,
+ difference = 346366,
+ average difference = 392804.62,
+ number of measurements = 13,
+       
+2018-09-13 12:39:53.772 [scala-execution-context-global-148] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 12:39:53.
+ previous value = 24408,
+ current value = 25033,
+ difference = 625,
+ average difference = 725.0714,
+ number of measurements = 14,
+       
+2018-09-13 12:40:01.993 [scala-execution-context-global-149] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 12:40:01.
+ previous value = 16773762,
+ current value = 17103742,
+ difference = 329980,
+ average difference = 388317.16,
+ number of measurements = 14,
+       
+2018-09-13 12:54:53.445 [scala-execution-context-global-158] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 12:54:53.
+ previous value = 25033,
+ current value = 25635,
+ difference = 602,
+ average difference = 716.86664,
+ number of measurements = 15,
+       
+2018-09-13 12:55:04.098 [scala-execution-context-global-159] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 12:55:04.
+ previous value = 17103742,
+ current value = 17468667,
+ difference = 364925,
+ average difference = 386757.66,
+ number of measurements = 15,
+       
+2018-09-13 12:55:15.953 [PanelMonitor-akka.actor.default-dispatcher-7] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 12:55:15.
+ previous value = 25635,
+ current value = 25646,
+ difference = 11,
+ average difference = 672.75,
+ number of measurements = 16,
+       
+2018-09-13 14:01:40.488 [PanelMonitor-akka.actor.default-dispatcher-7] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 14:01:40.
+ previous value = 27847,
+ current value = 28227,
+ difference = 380,
+ average difference = 380.0,
+ number of measurements = 1,
+       
+2018-09-13 14:21:19.330 [scala-execution-context-global-27] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 14:21:19.
+ previous value = 28463,
+ current value = 29090,
+ difference = 627,
+ average difference = 627.0,
+ number of measurements = 1,
+       
+2018-09-13 14:21:33.587 [scala-execution-context-global-28] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 14:21:33.
+ previous value = 19271449,
+ current value = 19755165,
+ difference = 483716,
+ average difference = 483716.0,
+ number of measurements = 1,
+       
+2018-09-13 14:36:17.759 [scala-execution-context-global-37] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 14:36:17.
+ previous value = 29090,
+ current value = 29772,
+ difference = 682,
+ average difference = 654.5,
+ number of measurements = 2,
+       
+2018-09-13 14:36:32.065 [scala-execution-context-global-38] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 14:36:32.
+ previous value = 19755165,
+ current value = 20233624,
+ difference = 478459,
+ average difference = 481087.5,
+ number of measurements = 2,
+       
+2018-09-13 14:51:18.012 [scala-execution-context-global-47] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 14:51:18.
+ previous value = 29772,
+ current value = 30435,
+ difference = 663,
+ average difference = 657.3333,
+ number of measurements = 3,
+       
+2018-09-13 14:51:31.855 [scala-execution-context-global-48] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 14:51:31.
+ previous value = 20233624,
+ current value = 20756603,
+ difference = 522979,
+ average difference = 495051.34,
+ number of measurements = 3,
+       
+2018-09-13 15:06:17.891 [scala-execution-context-global-57] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 15:06:17.
+ previous value = 30435,
+ current value = 31142,
+ difference = 707,
+ average difference = 669.75,
+ number of measurements = 4,
+       
+2018-09-13 15:06:32.218 [scala-execution-context-global-56] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 15:06:32.
+ previous value = 20756603,
+ current value = 21297533,
+ difference = 540930,
+ average difference = 506521.0,
+ number of measurements = 4,
+       
+2018-09-13 15:21:17.734 [scala-execution-context-global-66] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 15:21:17.
+ previous value = 31142,
+ current value = 31806,
+ difference = 664,
+ average difference = 668.6,
+ number of measurements = 5,
+       
+2018-09-13 15:21:35.048 [scala-execution-context-global-65] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 15:21:35.
+ previous value = 21297533,
+ current value = 21911729,
+ difference = 614196,
+ average difference = 528056.0,
+ number of measurements = 5,
+       
+2018-09-13 15:36:17.570 [scala-execution-context-global-75] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 15:36:17.
+ previous value = 31806,
+ current value = 32484,
+ difference = 678,
+ average difference = 670.1667,
+ number of measurements = 6,
+       
+2018-09-13 15:36:37.874 [scala-execution-context-global-74] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 15:36:37.
+ previous value = 21911729,
+ current value = 22608700,
+ difference = 696971,
+ average difference = 556208.5,
+ number of measurements = 6,
+       
+2018-09-13 15:51:17.731 [scala-execution-context-global-83] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 15:51:17.
+ previous value = 32484,
+ current value = 33264,
+ difference = 780,
+ average difference = 685.8571,
+ number of measurements = 7,
+       
+2018-09-13 15:51:37.638 [scala-execution-context-global-84] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 15:51:37.
+ previous value = 22608700,
+ current value = 23327819,
+ difference = 719119,
+ average difference = 579481.44,
+ number of measurements = 7,
+       
+2018-09-13 16:06:18.100 [scala-execution-context-global-93] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 16:06:18.
+ previous value = 33264,
+ current value = 33955,
+ difference = 691,
+ average difference = 686.5,
+ number of measurements = 8,
+       
+2018-09-13 16:06:39.328 [scala-execution-context-global-94] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 16:06:39.
+ previous value = 23327819,
+ current value = 23929668,
+ difference = 601849,
+ average difference = 582277.4,
+ number of measurements = 8,
+       
+2018-09-13 16:21:18.397 [scala-execution-context-global-104] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 16:21:18.
+ previous value = 33955,
+ current value = 34595,
+ difference = 640,
+ average difference = 681.3333,
+ number of measurements = 9,
+       
+2018-09-13 16:21:39.406 [scala-execution-context-global-103] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 16:21:39.
+ previous value = 23929668,
+ current value = 24503712,
+ difference = 574044,
+ average difference = 581362.56,
+ number of measurements = 9,
+       
+2018-09-13 16:36:18.087 [scala-execution-context-global-113] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 16:36:18.
+ previous value = 34595,
+ current value = 35286,
+ difference = 691,
+ average difference = 682.3,
+ number of measurements = 10,
+       
+2018-09-13 16:36:37.641 [scala-execution-context-global-112] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 16:36:37.
+ previous value = 24503712,
+ current value = 25102610,
+ difference = 598898,
+ average difference = 583116.1,
+ number of measurements = 10,
+       
+2018-09-13 16:51:18.183 [scala-execution-context-global-121] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 16:51:18.
+ previous value = 35286,
+ current value = 35923,
+ difference = 637,
+ average difference = 678.1818,
+ number of measurements = 11,
+       
+2018-09-13 16:51:42.132 [scala-execution-context-global-122] INFO  statistics - 
+stats_clicks_20180913:
+ time = 2018-09-13 16:51:42.
+ previous value = 25102610,
+ current value = 25820627,
+ difference = 718017,
+ average difference = 595379.8,
+ number of measurements = 11,
+       
+2018-09-13 16:58:57.684 [PanelMonitor-akka.actor.default-dispatcher-7] INFO  statistics - 
+event_daily:
+ time = 2018-09-13 16:58:57.
+ previous value = 35923,
+ current value = 36203,
+ difference = 280,
+ average difference = 645.0,
+ number of measurements = 12,
+       
+2018-09-16 13:17:01.006 [PanelMonitor-akka.actor.default-dispatcher-6] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 13:17:00.
+ previous value = 16750233,
+ current value = 16769585,
+ difference = 19352,
+ average difference = 19352.0,
+ number of measurements = 1,
+       
+2018-09-16 13:19:13.705 [PanelMonitor-akka.actor.default-dispatcher-5] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 13:19:13.
+ previous value = 0,
+ current value = 0,
+ difference = 0,
+ average difference = 0.0,
+ number of measurements = 1,
+       
+2018-09-16 13:19:22.103 [PanelMonitor-akka.actor.default-dispatcher-5] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 13:19:22.
+ previous value = 16780770,
+ current value = 16810732,
+ difference = 29962,
+ average difference = 29962.0,
+ number of measurements = 1,
+       
+2018-09-16 14:24:48.072 [scala-execution-context-global-29] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 14:24:48.
+ previous value = 328,
+ current value = 336,
+ difference = 8,
+ average difference = 8.0,
+ number of measurements = 1,
+       
+2018-09-16 14:24:53.970 [scala-execution-context-global-30] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 14:24:53.
+ previous value = 35804,
+ current value = 36479,
+ difference = 675,
+ average difference = 675.0,
+ number of measurements = 1,
+       
+2018-09-16 14:24:55.810 [scala-execution-context-global-31] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 14:24:55.
+ previous value = 17826247,
+ current value = 18160014,
+ difference = 333767,
+ average difference = 333767.0,
+ number of measurements = 1,
+       
+2018-09-16 14:39:47.282 [scala-execution-context-global-40] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 14:39:47.
+ previous value = 336,
+ current value = 321,
+ difference = -15,
+ average difference = -3.5,
+ number of measurements = 2,
+       
+2018-09-16 14:39:50.495 [scala-execution-context-global-41] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 14:39:50.
+ previous value = 36479,
+ current value = 37129,
+ difference = 650,
+ average difference = 662.5,
+ number of measurements = 2,
+       
+2018-09-16 14:39:56.921 [scala-execution-context-global-43] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 14:39:56.
+ previous value = 18160014,
+ current value = 18526663,
+ difference = 366649,
+ average difference = 350208.0,
+ number of measurements = 2,
+       
+2018-09-16 14:54:47.437 [scala-execution-context-global-52] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 14:54:47.
+ previous value = 321,
+ current value = 328,
+ difference = 7,
+ average difference = 0.0,
+ number of measurements = 3,
+       
+2018-09-16 14:54:50.544 [scala-execution-context-global-53] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 14:54:50.
+ previous value = 37129,
+ current value = 37802,
+ difference = 673,
+ average difference = 666.0,
+ number of measurements = 3,
+       
+2018-09-16 14:54:56.311 [scala-execution-context-global-51] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 14:54:56.
+ previous value = 18526663,
+ current value = 18888048,
+ difference = 361385,
+ average difference = 353933.66,
+ number of measurements = 3,
+       
+2018-09-16 15:09:47.602 [scala-execution-context-global-64] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 15:09:47.
+ previous value = 328,
+ current value = 308,
+ difference = -20,
+ average difference = -5.0,
+ number of measurements = 4,
+       
+2018-09-16 15:09:50.728 [scala-execution-context-global-63] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 15:09:50.
+ previous value = 37802,
+ current value = 38405,
+ difference = 603,
+ average difference = 650.25,
+ number of measurements = 4,
+       
+2018-09-16 15:09:56.893 [scala-execution-context-global-62] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 15:09:56.
+ previous value = 18888048,
+ current value = 19292415,
+ difference = 404367,
+ average difference = 366542.0,
+ number of measurements = 4,
+       
+2018-09-16 15:19:59.751 [PanelMonitor-akka.actor.default-dispatcher-8] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 15:19:59.
+ previous value = 308,
+ current value = 277,
+ difference = -31,
+ average difference = -10.2,
+ number of measurements = 5,
+       
+2018-09-16 16:11:25.436 [scala-execution-context-global-27] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 16:11:25.
+ previous value = 352,
+ current value = 375,
+ difference = 23,
+ average difference = 23.0,
+ number of measurements = 1,
+       
+2018-09-16 16:11:28.552 [scala-execution-context-global-28] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 16:11:28.
+ previous value = 40367,
+ current value = 41191,
+ difference = 824,
+ average difference = 824.0,
+ number of measurements = 1,
+       
+2018-09-16 16:11:38.141 [scala-execution-context-global-30] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 16:11:38.
+ previous value = 20673883,
+ current value = 21115658,
+ difference = 441775,
+ average difference = 441775.0,
+ number of measurements = 1,
+       
+2018-09-16 16:26:25.562 [scala-execution-context-global-38] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 16:26:25.
+ previous value = 375,
+ current value = 378,
+ difference = 3,
+ average difference = 13.0,
+ number of measurements = 2,
+       
+2018-09-16 16:26:28.699 [scala-execution-context-global-39] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 16:26:28.
+ previous value = 41191,
+ current value = 41904,
+ difference = 713,
+ average difference = 768.5,
+ number of measurements = 2,
+       
+2018-09-16 16:26:37.221 [scala-execution-context-global-40] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 16:26:37.
+ previous value = 21115658,
+ current value = 21594409,
+ difference = 478751,
+ average difference = 460263.0,
+ number of measurements = 2,
+       
+2018-09-16 16:41:25.568 [scala-execution-context-global-49] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 16:41:25.
+ previous value = 378,
+ current value = 394,
+ difference = 16,
+ average difference = 14.0,
+ number of measurements = 3,
+       
+2018-09-16 16:41:29.776 [scala-execution-context-global-50] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 16:41:29.
+ previous value = 41904,
+ current value = 42624,
+ difference = 720,
+ average difference = 752.3333,
+ number of measurements = 3,
+       
+2018-09-16 16:41:38.568 [scala-execution-context-global-51] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 16:41:38.
+ previous value = 21594409,
+ current value = 22090194,
+ difference = 495785,
+ average difference = 472103.66,
+ number of measurements = 3,
+       
+2018-09-16 16:56:25.581 [scala-execution-context-global-60] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 16:56:25.
+ previous value = 394,
+ current value = 405,
+ difference = 11,
+ average difference = 13.25,
+ number of measurements = 4,
+       
+2018-09-16 16:56:28.142 [scala-execution-context-global-62] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 16:56:28.
+ previous value = 42624,
+ current value = 43463,
+ difference = 839,
+ average difference = 774.0,
+ number of measurements = 4,
+       
+2018-09-16 16:56:38.126 [scala-execution-context-global-61] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 16:56:38.
+ previous value = 22090194,
+ current value = 22592582,
+ difference = 502388,
+ average difference = 479674.75,
+ number of measurements = 4,
+       
+2018-09-16 17:11:25.444 [scala-execution-context-global-71] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 17:11:25.
+ previous value = 405,
+ current value = 298,
+ difference = -107,
+ average difference = -10.8,
+ number of measurements = 5,
+       
+2018-09-16 17:11:28.717 [scala-execution-context-global-70] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 17:11:28.
+ previous value = 43463,
+ current value = 44132,
+ difference = 669,
+ average difference = 753.0,
+ number of measurements = 5,
+       
+2018-09-16 17:11:38.704 [scala-execution-context-global-72] INFO  statistics - 
+stats_clicks_20180916:
+ time = 2018-09-16 17:11:38.
+ previous value = 22592582,
+ current value = 23088692,
+ difference = 496110,
+ average difference = 482961.8,
+ number of measurements = 5,
+       
+2018-09-16 17:18:09.662 [PanelMonitor-akka.actor.default-dispatcher-6] INFO  statistics - 
+stats_conversions:
+ time = 2018-09-16 17:18:09.
+ previous value = 298,
+ current value = 303,
+ difference = 5,
+ average difference = -8.166667,
+ number of measurements = 6,
+       
+2018-09-16 17:18:14.188 [PanelMonitor-akka.actor.default-dispatcher-6] INFO  statistics - 
+event_daily:
+ time = 2018-09-16 17:18:14.
+ previous value = 44132,
+ current value = 44504,
+ difference = 372,
+ average difference = 689.5,
+ number of measurements = 6,
+       
