@@ -4,12 +4,8 @@
 
 package com.stulsoft.monitor.log.analyzer
 
-import java.io.File
-
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.spark.{SparkConf, SparkContext}
-
-import scala.util.{Failure, Success}
 
 /**
   * @author Yuriy Stul
@@ -19,51 +15,10 @@ object Application extends App with LazyLogging {
 
   val conf = new SparkConf().setAppName("MonitorLogAnalyzer").setMaster("local[*]")
   val sc = new SparkContext(conf)
-  analyze("src/test/resources/panel-monitor-statistics.log", "stats_clicks")
-  analyze("src/test/resources/panel-monitor-statistics.log", "event_daily")
-  analyze("src/test/resources/panel-monitor-statistics.log", "stats_conversions")
+  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "stats_clicks")
+  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "event_daily")
+  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "stats_conversions")
 
   sc.stop()
   logger.info("<==Application")
-
-  def analyze(fileName: String, statisticsName: String): Unit = {
-    logger.info(s"Analyzing $fileName file for $statisticsName")
-    PrepareStatisticsLog(fileName).prepare(statisticsName) match {
-      case Success(tempFileName) =>
-        //        logger.debug("Prepared {} file", tempFileName)
-        try {
-          val data = sc.textFile(tempFileName)
-            .map(line => line.split('|'))
-            .map(record => (record(0), record(1).toLong))
-
-          val numberOfRecords = data.count
-          val total = data.map(record => record._2).sum
-          val minRecord = data.fold(("", Long.MaxValue))((acc, value) => {
-            if (acc._2 > value._2)
-              value
-            else
-              acc
-          })
-
-          val maxRecord = data.fold(("", Long.MinValue))((acc, value) => {
-            if (acc._2 < value._2)
-              value
-            else
-              acc
-          })
-
-          val result = s"Number of records = $numberOfRecords" +
-            s", min: at ${minRecord._1} - ${minRecord._2}" +
-            s", max: at ${maxRecord._1} - ${maxRecord._2}" +
-            f", average = ${total / numberOfRecords}%.2f"
-          logger.info(result)
-
-          new File(tempFileName).delete()
-        } catch {
-          case _: Exception =>
-        }
-      case Failure(error) =>
-        logger.error(s"Failed to prepare data. Error: ${error.getMessage}")
-    }
-  }
 }
