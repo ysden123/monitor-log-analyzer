@@ -7,6 +7,8 @@ package com.stulsoft.monitor.log.analyzer
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.spark.{SparkConf, SparkContext}
 
+import scala.io.StdIn
+
 /**
   * @author Yuriy Stul
   */
@@ -15,10 +17,14 @@ object Application extends App with LazyLogging {
 
   val conf = new SparkConf().setAppName("MonitorLogAnalyzer").setMaster("local[*]")
   val sc = new SparkContext(conf)
-  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "stats_clicks")
-  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "event_daily")
-  Analyzer.analyze(sc, "src/test/resources/panel-monitor-statistics.log", "stats_conversions")
+  println("Please enter path to log file:")
 
+  val fileName = StdIn.readLine()
+  if (fileName != null && !fileName.isEmpty) {
+    Analyzer.analyze(sc, fileName, "stats_clicks")
+    Analyzer.analyze(sc, fileName, "event_daily")
+    Analyzer.analyze(sc, fileName, "stats_conversions")
+  }
   sc.stop()
   logger.info("<==Application")
 }
