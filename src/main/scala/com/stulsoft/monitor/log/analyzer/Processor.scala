@@ -40,6 +40,8 @@ class Processor {
     else
       None
   }
+
+  def recordNumber(): Long = count
 }
 
 object Processor {
