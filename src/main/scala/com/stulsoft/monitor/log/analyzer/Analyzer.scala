@@ -4,56 +4,63 @@
 
 package com.stulsoft.monitor.log.analyzer
 
-import java.io.File
-
+import com.stulsoft.monitor.log.analyzer.util.Utils
 import com.typesafe.scalalogging.LazyLogging
-import org.apache.spark.SparkContext
 
-import scala.util.{Failure, Success}
+import scala.io.Source
 
 /**
   * @author Yuriy Stul
   */
 object Analyzer extends LazyLogging {
-  def analyze(sc: SparkContext, fileName: String, statisticsName: String): Unit = {
+  def analyze(fileName: String, statisticsName: String): Unit = {
     logger.info(s"Analyzing $fileName file for $statisticsName")
-    PrepareStatisticsLog(fileName).prepare(statisticsName) match {
-      case Success(tempFileName) =>
-        //        logger.debug("Prepared {} file", tempFileName)
-        try {
-          val data = sc.textFile(tempFileName)
-            .map(line => line.split('|'))
-            .map(record => Status(record(0), record(1).toLong))
+    var source: Source = null
+    try {
+      val processor = Processor()
+      source = Utils.source(fileName).get
+      val iterator = source.getLines()
+      while (iterator.hasNext) {
+        iterator.next() // Skip 1st line
+        val statisticsName = iterator.next().toString.replace(":", "")
+        val date = iterator.next().toString
+          .replace(" time = ", "")
+          .replace(".", "")
+        iterator.next() // Skip previous value
+        val currentValue = iterator.next().toString
+          .replace(" current value = ", "")
+          .replace(",", "")
+        if (statisticsName.startsWith(statisticsName))
+          processor.process(Status(date, currentValue.toLong))
 
-          val numberOfRecords = data.count
-          val total = data.map(status => status.value).sum
-          val minRecord = data.fold(Status("", Long.MaxValue))((acc, current) => {
-            if (acc.value > current.value)
-              current
-            else
-              acc
-          })
+        iterator.next() // Skip difference
+        iterator.next() // Skip average difference
+        iterator.next() // Skip number of measurements
+        iterator.next() // Skip empty line
+      }
 
-          val maxRecord = data.fold(Status("", Long.MinValue))((acc, current) => {
-            if (acc.value < current.value)
-              current
-            else
-              acc
-          })
-
-          val result = s"Number of records = $numberOfRecords" +
-            s", min: at ${minRecord.date} - ${minRecord.value}" +
-            s", max: at ${maxRecord.date} - ${maxRecord.value}" +
-            f", average = ${total / numberOfRecords}%.2f"
-          logger.info(result)
-
-          new File(tempFileName).delete()
-        } catch {
-          case e: Exception =>
-            logger.error(s"Failed analyzing. Error: ${e.getMessage}", e)
-        }
-      case Failure(error) =>
-        logger.error(s"Failed to prepare data. Error: ${error.getMessage}", error)
+      val count = processor.recordNumber()
+      val min = processor.minStatus()
+      val max = processor.maxStatus()
+      val average = processor.averageValue()
+      val result = if (count > 0
+        && max.isDefined
+        && min.isDefined
+        && average.isDefined) {
+        s"Number of records = $count" +
+          s", min: at ${min.get.date} - ${min.get.value}" +
+          s", max: at ${max.get.date} - ${max.get.value}" +
+          f", average = ${average.get}%.2f"
+      } else
+        "No records fo analysis"
+      logger.info(result)
+    }
+    catch {
+      case e: Exception =>
+        logger.error(s"Failed analyzing. error: ${e.getMessage}", e)
+    }
+    finally {
+      if (source != null) source.close()
     }
   }
 }

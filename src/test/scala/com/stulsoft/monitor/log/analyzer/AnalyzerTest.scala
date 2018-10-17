@@ -4,31 +4,21 @@
 
 package com.stulsoft.monitor.log.analyzer
 
-import org.apache.spark.{SparkConf, SparkContext}
-import org.scalatest.{BeforeAndAfter, FunSuite}
+import org.scalatest.FunSuite
 
 /**
   * @author Yuriy Stul
   */
-class AnalyzerTest extends FunSuite with BeforeAndAfter {
-  var sc: SparkContext = _
-  before {
-    sc = new SparkContext(new SparkConf().setAppName("AnalyzerTest").setMaster("local[*]"))
-  }
-
-  after {
-    sc.stop()
-  }
-
+class AnalyzerTest extends FunSuite {
   test("testAnalyze stats_clicks") {
-    Analyzer.analyze(sc, "panel-monitor-statistics.log", "stats_clicks")
+    Analyzer.analyze("panel-monitor-statistics.log", "stats_clicks")
   }
 
   test("testAnalyze event_daily") {
-    Analyzer.analyze(sc, "panel-monitor-statistics.log", "event_daily")
+    Analyzer.analyze("panel-monitor-statistics.log", "event_daily")
   }
   test("testAnalyze stats_conversions") {
-    Analyzer.analyze(sc, "panel-monitor-statistics.log", "stats_conversions")
+    Analyzer.analyze("panel-monitor-statistics.log", "stats_conversions")
   }
 
 }
