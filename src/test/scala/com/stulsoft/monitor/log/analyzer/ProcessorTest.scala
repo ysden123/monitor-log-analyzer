@@ -19,9 +19,8 @@ class ProcessorTest extends FunSuite with Matchers {
     processor.process(Status("test", "time3", 3))
     val results = processor.result()
     results.length shouldBe 1
-    results(0).min shouldBe Status("test", "time1", 1)
-    results(0).max shouldBe Status("test", "time3", 3)
-    results(0).average shouldBe 2.0
+    results.head.min shouldBe Status("test", "time1", 1)
+    results.head.max shouldBe Status("test", "time3", 3)
+    results.head.average shouldBe 2.0
   }
-
 }
