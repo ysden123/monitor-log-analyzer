@@ -17,6 +17,7 @@ object Analyzer extends LazyLogging {
     logger.info(s"""Analyzing "$fileName" file""")
     var source: Source = null
     try {
+      val start = System.currentTimeMillis()
       val processor = Processor()
       source = Utils.source(fileName).get
       val iterator = source.getLines()
@@ -43,7 +44,7 @@ object Analyzer extends LazyLogging {
         iterator.next() // Skip empty line
       }
 
-      processor.result().foreach(result=>{
+      processor.result().foreach(result => {
         val resultText = s"Statistics name: ${result.statisticsName}" +
           s", number of records = ${result.count}" +
           s", min: at ${result.min.date} = ${result.min.value}" +
@@ -51,6 +52,8 @@ object Analyzer extends LazyLogging {
           f", average =  ${result.average}%.2f"
         logger.info(resultText)
       })
+      val totalNumberOfRecords = processor.result().map(result => result.count).sum
+      logger.info(s"Processed $totalNumberOfRecords records in ${System.currentTimeMillis() - start} ms")
     }
     catch {
       case e: Exception =>
