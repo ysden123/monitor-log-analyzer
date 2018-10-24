@@ -52,7 +52,7 @@ object Analyzer extends LazyLogging {
           f", average =  ${result.average}%.2f"
         logger.info(resultText)
       })
-      val totalNumberOfRecords = processor.result().map(result => result.count).sum
+      val totalNumberOfRecords = processor.result().foldLeft[Long](0)((total,statisticsSummary)=>total + statisticsSummary.count)
       logger.info(s"Processed $totalNumberOfRecords records in ${System.currentTimeMillis() - start} ms")
     }
     catch {
