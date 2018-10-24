@@ -7,4 +7,4 @@ package com.stulsoft.monitor.log.analyzer
 /**
   * @author Yuriy Stul
   */
-case class Status(date:String, value:Long)
+case class Status(statisticsName: String, date:String, value:Long)
