@@ -1,8 +1,8 @@
 # monitor-log-analyzer
 Analyzes monitoring log
 
-== Build status
+## Build status
 
-master: image:https://travis-ci.org/ysden123/monitor-log-analyzer.svg?branch=master["Build Status", link="https://travis-ci.org/ysden123/monitor-log-analyzer"]
+[![Build Status: master](https://travis-ci.org/ysden123/monitor-log-analyzer.svg?branch=master)](https://travis-ci.org/ysden123/monitor-log-analyzer)
 
-develop: image:https://travis-ci.org/ysden123/monitor-log-analyzer.svg?branch=develop["Build Status", link="https://travis-ci.org/ysden123/monitor-log-analyzer"]
+[![Build Status: develop](https://travis-ci.org/ysden123/monitor-log-analyzer.svg?branch=develop)](https://travis-ci.org/ysden123/monitor-log-analyzer)
