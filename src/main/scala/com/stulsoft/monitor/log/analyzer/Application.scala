@@ -18,9 +18,7 @@ object Application extends App with LazyLogging {
 
   val fileName = StdIn.readLine()
   if (fileName != null && !fileName.isEmpty) {
-    Analyzer.analyze(fileName, "stats_clicks")
-    Analyzer.analyze(fileName, "event_daily")
-    Analyzer.analyze(fileName, "stats_conversions")
+    Analyzer.analyze(fileName)
   }
   logger.info("<==Application")
 }

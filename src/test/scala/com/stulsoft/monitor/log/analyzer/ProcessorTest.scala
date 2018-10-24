@@ -14,13 +14,14 @@ class ProcessorTest extends FunSuite with Matchers {
   test("testProcess") {
     val processor = Processor()
 
-    processor.process(Status("time1", 1))
-    processor.process(Status("time2", 2))
-    processor.process(Status("time3", 3))
-    processor.minStatus() shouldBe Some(Status("time1", 1))
-    processor.maxStatus() shouldBe Some(Status("time3", 3))
-    processor.averageValue() shouldBe Some(2.0)
-
+    processor.process(Status("test", "time1", 1))
+    processor.process(Status("test", "time2", 2))
+    processor.process(Status("test", "time3", 3))
+    val results = processor.result()
+    results.length shouldBe 1
+    results(0).min shouldBe Status("test", "time1", 1)
+    results(0).max shouldBe Status("test", "time3", 3)
+    results(0).average shouldBe 2.0
   }
 
 }
