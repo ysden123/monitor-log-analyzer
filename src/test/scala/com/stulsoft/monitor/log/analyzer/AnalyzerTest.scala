@@ -11,6 +11,6 @@ import org.scalatest.FunSuite
   */
 class AnalyzerTest extends FunSuite {
   test("testAnalyze") {
-    Analyzer.analyze("panel-monitor-statistics.log")
+    Analyzer.analyze(List("panel-monitor-statistics.log"))
   }
 }

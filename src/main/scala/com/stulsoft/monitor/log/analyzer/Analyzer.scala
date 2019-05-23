@@ -13,36 +13,39 @@ import scala.io.Source
   * @author Yuriy Stul
   */
 object Analyzer extends LazyLogging {
-  def analyze(fileName: String): Unit = {
-    logger.info(s"""Analyzing "$fileName" file""")
+  def analyze(fileNames: Iterable[String]): Unit = {
     var source: Source = null
     try {
       val start = System.currentTimeMillis()
       val processor = Processor()
-      source = Utils.source(fileName).get
-      val iterator = source.getLines()
-      while (iterator.hasNext) {
-        iterator.next() // Skip 1st line
-        val currentStatisticsName = iterator.next().toString.replace(":", "")
-        val date = iterator.next().toString
-          .replace(" time = ", "")
-          .replace(".", "")
-        iterator.next() // Skip previous value
-        val currentValue = iterator.next().toString
-          .replace(" current value = ", "")
-          .replace(",", "")
-        val theStatisticsName =
-          if (currentStatisticsName.startsWith("stats_clicks"))
-            "stats_clicks"
-          else
-            currentStatisticsName
-        processor.process(Status(theStatisticsName, date, currentValue.toLong))
+      fileNames.foreach(fileName =>{
+        logger.info(s"""Analyzing "$fileName" file""")
+        source = Utils.source(fileName).get
+        val iterator = source.getLines()
+        while (iterator.hasNext) {
+          iterator.next() // Skip 1st line
+          val currentStatisticsName = iterator.next().toString.replace(":", "")
+          val date = iterator.next().toString
+            .replace(" time = ", "")
+            .replace(".", "")
+          iterator.next() // Skip previous value
+          val currentValue = iterator.next().toString
+            .replace(" current value = ", "")
+            .replace(",", "")
+          val theStatisticsName =
+            if (currentStatisticsName.startsWith("stats_clicks"))
+              "stats_clicks"
+            else
+              currentStatisticsName
+          processor.process(Status(theStatisticsName, date, currentValue.toLong))
 
-        iterator.next() // Skip difference
-        iterator.next() // Skip average difference
-        iterator.next() // Skip number of measurements
-        iterator.next() // Skip empty line
-      }
+          iterator.next() // Skip difference
+          iterator.next() // Skip average difference
+          iterator.next() // Skip number of measurements
+          iterator.next() // Skip empty line
+        }
+        source.close()
+      })
 
       processor.result().foreach(result => {
         val resultText = s"Statistics name: ${result.statisticsName}" +
