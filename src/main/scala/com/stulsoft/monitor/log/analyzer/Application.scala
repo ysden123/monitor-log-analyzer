@@ -6,6 +6,7 @@ package com.stulsoft.monitor.log.analyzer
 
 import com.typesafe.scalalogging.LazyLogging
 
+import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn
 
 /**
@@ -14,11 +15,30 @@ import scala.io.StdIn
 object Application extends App with LazyLogging {
   logger.info("==>Application")
 
-  println("Please enter path to log file:")
+  val fileNames = ArrayBuffer.empty[String]
 
-  val fileName = StdIn.readLine()
-  if (fileName != null && !fileName.isEmpty) {
-    Analyzer.analyze(fileName)
+  /**
+    * Reads a file name, adds it to fileNames, and returns true, if to continue
+    *
+    * @return true, if to continue; otherwise - false
+    */
+  def readFileName(): Boolean = {
+    println("Please enter path to log file or empty line to exit:")
+    val fileName = StdIn.readLine()
+    if (fileName == null || fileName.isEmpty)
+      false
+    else {
+      fileNames += fileName
+      true
+    }
   }
+
+  // Prepare file list
+  while (readFileName()) {}
+
+  // Analyze
+  if (fileNames.nonEmpty)
+    Analyzer.analyze(fileNames)
+
   logger.info("<==Application")
 }

@@ -7,8 +7,8 @@ lazy val logbackVersion = "1.2.3"
 
 lazy val commonSettings = Seq(
   organization := "com.stulsoft",
-  version := "2.0.1",
-  scalaVersion := "2.12.7",
+  version := "2.1.0",
+  scalaVersion := "2.12.8",
   scalacOptions ++= Seq(
     "-feature",
     "-language:implicitConversions",
